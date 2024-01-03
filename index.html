@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Luas Segitiga</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Selamat Datang di Katik</h1>
+            <p>Sebuah website yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+            <button onclick="scrollDown1()" class="buttonLuas">Klik ini untuk Menghitung Luas Segitiga</button>
+            <button onclick="scrollDown2()" class="buttonKeliling">Klik ini untuk Menghitung keliling Segitiga</button>
+        </div>
+        <div class="conten" id="content1">
+            <h1 class="headLuas">Luas Segitiga</h1>
+            <img src="./images/segitiga.png" alt="" srcset="">
+            <p>Rumus Luas Segitiga Yaitu :</p>
+            <p class="rumus">L = 1/2 * a * T</p>
+            <p>Dimana : <br>
+                L = Luas <br>
+                a = Panjang Alas <br>
+                T = Tinggi
+            </p>
+            <hr>
+            <h1>Hitung Luas Segitiga</h1>
+            <input type="text" id="alas" placeholder="masukkan panjang alas" required><br>
+            <input type="text" id="tinggi" placeholder="masukan tinggi" required><br>
+            <button class="btnHitungluas" onclick="hitungLuas()">Hitung Luas</button>
+            
+            <div id="luas" ></div>
+        </div>
+
+        <div class="conten" id="content2">
+            <h1 class="headLuas">keliling Segitiga</h1>
+            <img src="./images/segitiga.png" alt="" srcset="">
+            <p>Rumus Keliling Segitiga Yaitu :</p>
+            <p class="rumus">K = S1 + S2 + S3</p>
+            <p>Dimana : <br>
+                K = Keliling <br>
+                S1 = Sisi A <br>
+                S2 = Sisi B <br>
+                S3 = Sisi C
+            </p>
+            <hr>
+            <h1>Hitung Luas Segitiga</h1>
+            <input type="text" id="a" placeholder="Masukan Sisi A" required><br>
+            <input type="text" id="b" placeholder="Masukan Sisi B" required><br>
+            <input type="text" id="c" placeholder="Masukan Sisi C" required><br>
+
+            <button class="btnHitungluas" onclick="hitungKeliling()">Hitung Keliling</button>
+            
+            <div id="keliling" ></div>
+        </div>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
